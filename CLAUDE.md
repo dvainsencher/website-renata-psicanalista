@@ -113,3 +113,14 @@ Once a React project is initialized (e.g., via Vite or Create React App), update
 
 ## Standards
 - Use conventional commits
+
+## Development Rules
+- Every time a new package or dependency is installed, automatically 
+  update README.md with:
+  - Package name and version
+  - Purpose of the package
+  - Any relevant usage notes
+- Keep README.md as a living document reflecting the current state 
+  of the project
+- Never add "Co-Authored-By: Claude" in commit messages
+
