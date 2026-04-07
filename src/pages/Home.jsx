@@ -10,7 +10,7 @@ export default function Home() {
       <section className="min-h-screen flex items-center bg-cream pt-20">
         <div className="max-w-5xl mx-auto px-6 py-24 w-full">
           <div className="max-w-2xl">
-            <p className="text-xs tracking-widest uppercase text-accent mb-6 font-light">
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-6 font-light">
               Psicanalista — São Paulo
             </p>
             <h1 className="font-serif font-light text-5xl md:text-6xl lg:text-7xl text-warm leading-tight mb-6">
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs tracking-widest uppercase text-accent mb-4">A escuta psicanalítica</p>
+              <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">A escuta psicanalítica</p>
               <h2 className="font-serif font-light text-4xl text-warm leading-snug">
                 Um encontro com o que é mais singular em você
               </h2>
@@ -71,7 +71,7 @@ export default function Home() {
       <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-xs tracking-widest uppercase text-accent mb-3">Modalidades</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-3">Modalidades</p>
             <h2 className="font-serif font-light text-4xl text-warm">Formas de atendimento</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -101,7 +101,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               to="/atendimento"
-              className="text-sm tracking-wide text-accent hover:text-warm transition-colors duration-200 border-b border-accent/40 pb-0.5"
+              className="text-sm tracking-wide text-warm-400 hover:text-warm transition-colors duration-200 border-b border-warm-400/40 pb-0.5"
             >
               Ver todos os detalhes →
             </Link>
@@ -113,7 +113,7 @@ export default function Home() {
       <section className="bg-cream-dark py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-xs tracking-widest uppercase text-accent mb-3">Localização</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-3">Localização</p>
             <h2 className="font-serif font-light text-4xl text-warm">Onde nos encontramos</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 text-center">

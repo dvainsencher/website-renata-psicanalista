@@ -7,7 +7,7 @@ export default function Atendimento() {
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-accent mb-4">Serviços</p>
+          <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Serviços</p>
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Atendimento
           </h1>
@@ -18,7 +18,7 @@ export default function Atendimento() {
       <section className="bg-cream-dark py-20 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-xs tracking-widest uppercase text-accent mb-4">01</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">01</p>
             <h2 className="font-serif font-light text-4xl text-warm mb-6">
               Atendimento Individual
             </h2>
@@ -34,7 +34,7 @@ export default function Atendimento() {
             </p>
           </div>
           <div className="space-y-3 md:pt-16">
-            <p className="text-xs tracking-widest uppercase text-accent mb-5">Temas frequentes</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-5">Temas frequentes</p>
             {[
               'Conflitos internos e emocionais',
               'Ansiedade e transtornos de ansiedade',
@@ -58,7 +58,7 @@ export default function Atendimento() {
       <section className="bg-cream py-20 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
           <div className="order-2 md:order-1 space-y-3 md:pt-16">
-            <p className="text-xs tracking-widest uppercase text-accent mb-5">Temas frequentes</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-5">Temas frequentes</p>
             {[
               'Conflitos relacionais recorrentes',
               'Dificuldades de comunicação',
@@ -74,7 +74,7 @@ export default function Atendimento() {
             ))}
           </div>
           <div className="order-1 md:order-2">
-            <p className="text-xs tracking-widest uppercase text-accent mb-4">02</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">02</p>
             <h2 className="font-serif font-light text-4xl text-warm mb-6">
               Atendimento de Casais
             </h2>
@@ -95,7 +95,7 @@ export default function Atendimento() {
       <section className="bg-cream-dark py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-xs tracking-widest uppercase text-accent mb-3">03</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-3">03</p>
             <h2 className="font-serif font-light text-4xl text-warm">Modalidades</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

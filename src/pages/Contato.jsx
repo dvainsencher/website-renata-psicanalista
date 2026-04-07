@@ -7,7 +7,7 @@ export default function Contato() {
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-accent mb-4">Contato</p>
+          <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Contato</p>
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Fale comigo
           </h1>
@@ -19,7 +19,7 @@ export default function Contato() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
           {/* WhatsApp */}
           <div>
-            <p className="text-xs tracking-widest uppercase text-accent mb-6">Principal</p>
+            <p className="text-xs tracking-widest uppercase text-warm-400 mb-6">Principal</p>
             <h2 className="font-serif font-light text-3xl text-warm mb-4">WhatsApp</h2>
             <p className="text-warm-400 font-light leading-relaxed mb-6">
               A forma mais rápida de entrar em contato. Envie uma mensagem
@@ -43,7 +43,7 @@ export default function Contato() {
           {/* Email + Location */}
           <div className="space-y-10">
             <div>
-              <p className="text-xs tracking-widest uppercase text-accent mb-4">Email</p>
+              <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Email</p>
               <h3 className="font-serif font-light text-2xl text-warm mb-3">E-mail</h3>
               <p className="text-warm-400 font-light text-sm leading-relaxed mb-2">
                 Para contatos por e-mail:
@@ -57,7 +57,7 @@ export default function Contato() {
             </div>
 
             <div>
-              <p className="text-xs tracking-widest uppercase text-accent mb-4">Localização</p>
+              <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Localização</p>
               <h3 className="font-serif font-light text-2xl text-warm mb-5">Consultórios</h3>
               <div className="space-y-4">
                 {[

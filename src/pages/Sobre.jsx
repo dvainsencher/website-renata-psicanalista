@@ -7,7 +7,7 @@ export default function Sobre() {
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-accent mb-4">Sobre</p>
+          <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Sobre</p>
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Renata Druck
           </h1>
@@ -52,7 +52,7 @@ export default function Sobre() {
       {/* Approach */}
       <section className="bg-cream py-20 px-6">
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-accent mb-4 text-center">Abordagem</p>
+          <p className="text-xs tracking-widest uppercase text-warm-400 mb-4 text-center">Abordagem</p>
           <h2 className="font-serif font-light text-4xl text-warm text-center mb-14">
             Filosofia clínica
           </h2>
