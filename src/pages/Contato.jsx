@@ -49,10 +49,10 @@ export default function Contato() {
                 Para contatos por e-mail:
               </p>
               <a
-                href="mailto:[EMAIL]"
+                href="mailto:renatadruck@gmail.com"
                 className="font-serif text-warm hover:text-accent transition-colors duration-200"
               >
-                [EMAIL]
+                renatadruck@gmail.com
               </a>
             </div>
 

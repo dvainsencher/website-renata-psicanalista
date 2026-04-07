@@ -76,7 +76,7 @@ phobias, social isolation, anxiety disorders, compulsions.
 ### Contact (Contato)
 - WhatsApp CTA (primary CTA — floating button visible on all pages)
 - WhatsApp number: 11 99981-6070
-- Email: to be defined — leave a placeholder [EMAIL] in the code
+- Email: renatadruck@gmail.com
 - Location: near Sumaré and Butantã metro stations, São Paulo
 - Note: online appointments available nationwide
 
