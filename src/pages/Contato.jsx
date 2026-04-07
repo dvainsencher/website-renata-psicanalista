@@ -1,9 +1,19 @@
+import { Helmet } from 'react-helmet-async'
+
 const WHATSAPP_URL =
   'https://wa.me/5511999816070?text=Ol%C3%A1%2C%20Renata!%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento.'
 
 export default function Contato() {
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Contato — Renata Druck, Psicanalista</title>
+        <meta name="description" content="Entre em contato com Renata Druck. WhatsApp: (11) 99981-6070. Consultórios próximos ao metrô Sumaré e Butantã, São Paulo. Atendimento remoto para todo o Brasil." />
+        <link rel="canonical" href="https://renatadruck.com.br/contato" />
+        <meta property="og:title" content="Contato — Renata Druck, Psicanalista" />
+        <meta property="og:url" content="https://renatadruck.com.br/contato" />
+      </Helmet>
+
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">

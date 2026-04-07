@@ -99,17 +99,20 @@ phobias, social isolation, anxiety disorders, compulsions.
 - No before/after framing
 
 ## Deploy
-- Run: npm run deploy
-- GitHub Pages custom domain: renatadruck.com.br
-- CNAME file must exist in /public folder
+- Hosted on Netlify or Vercel (auto-deploys on push to main)
+- Custom domain: renatadruck.com.br
+- `public/_redirects` handles SPA fallback on Netlify
+- `vercel.json` handles SPA rewrites on Vercel
+- `public/CNAME` kept for reference only (no longer GitHub Pages)
 
 ## Commands
 - Install: `npm install`
 - Dev server: `npm run dev` (http://localhost:5173)
+- Expose to local network: `npm run dev -- --host`
 - Build: `npm run build`
 - Preview build: `npm run preview`
 - Lint: `npm run lint`
-- Deploy: `npm run deploy`
+- Deploy: push to main — Netlify/Vercel auto-deploys
 
 ## Standards
 - Use conventional commits

@@ -1,9 +1,19 @@
+import { Helmet } from 'react-helmet-async'
+
 const WHATSAPP_URL =
   'https://wa.me/5511999816070?text=Ol%C3%A1%2C%20Renata!%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento.'
 
 export default function Atendimento() {
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Atendimento — Renata Druck, Psicanalista</title>
+        <meta name="description" content="Atendimento psicanalítico individual e de casais, presencial, remoto e híbrido. Consultório em São Paulo próximo ao metrô Sumaré e Butantã." />
+        <link rel="canonical" href="https://renatadruck.com.br/atendimento" />
+        <meta property="og:title" content="Atendimento — Renata Druck, Psicanalista" />
+        <meta property="og:url" content="https://renatadruck.com.br/atendimento" />
+      </Helmet>
+
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">

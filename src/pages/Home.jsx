@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const WHATSAPP_URL =
   'https://wa.me/5511999816070?text=Ol%C3%A1%2C%20Renata!%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento.'
@@ -6,6 +7,14 @@ const WHATSAPP_URL =
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <title>Renata Druck — Psicanalista em São Paulo</title>
+        <meta name="description" content="Atendimento psicanalítico individual e de casais em São Paulo. Presencial, remoto e híbrido. Consultório próximo ao metrô Sumaré e Butantã." />
+        <link rel="canonical" href="https://renatadruck.com.br/" />
+        <meta property="og:title" content="Renata Druck — Psicanalista em São Paulo" />
+        <meta property="og:url" content="https://renatadruck.com.br/" />
+      </Helmet>
+
       {/* Hero */}
       <section className="min-h-screen flex items-center bg-cream pt-20">
         <div className="max-w-5xl mx-auto px-6 py-24 w-full">
