@@ -104,12 +104,12 @@ phobias, social isolation, anxiety disorders, compulsions.
 - CNAME file must exist in /public folder
 
 ## Commands
-Once a React project is initialized (e.g., via Vite or Create React App), update this file with:
 - Install: `npm install`
-- Dev server: `npm run dev` or `npm start`
+- Dev server: `npm run dev` (http://localhost:5173)
 - Build: `npm run build`
+- Preview build: `npm run preview`
 - Lint: `npm run lint`
-- Tests: `npm test`
+- Deploy: `npm run deploy`
 
 ## Standards
 - Use conventional commits
