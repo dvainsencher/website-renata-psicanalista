@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div>
-            <p className="font-serif text-cream text-lg font-normal">Renata Druck</p>
-            <p className="text-[10px] tracking-widest uppercase mt-1">Psicanalista</p>
+            <p className="font-serif text-accent-light text-lg font-normal">Renata Druck</p>
+            <p className="text-[10px] tracking-widest uppercase mt-1 text-cream/40">Psicanalista</p>
           </div>
           <nav className="flex flex-wrap gap-6 text-sm font-light">
             <Link to="/" className="hover:text-cream transition-colors duration-200">Início</Link>

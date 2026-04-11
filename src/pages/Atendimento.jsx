@@ -18,11 +18,19 @@ export default function Atendimento() {
       <section className="bg-cream py-24 px-6 text-center">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs tracking-widest uppercase text-warm-400 mb-6">Serviços</p>
-          <div className="w-16 h-px bg-accent mx-auto mb-8" />
+          <div className="flex items-center gap-4 mb-8 max-w-xs mx-auto">
+            <div className="flex-1 h-px bg-accent/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+            <div className="flex-1 h-px bg-accent/40" />
+          </div>
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Atendimento
           </h1>
-          <div className="w-16 h-px bg-accent mx-auto mt-8" />
+          <div className="flex items-center gap-4 mt-8 max-w-xs mx-auto">
+            <div className="flex-1 h-px bg-accent/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+            <div className="flex-1 h-px bg-accent/40" />
+          </div>
         </div>
       </section>
 
@@ -30,7 +38,6 @@ export default function Atendimento() {
       <section className="bg-cream-dark py-20 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">01</p>
             <h2 className="font-serif font-light text-4xl text-warm mb-6">
               Atendimento Individual
             </h2>
@@ -80,13 +87,12 @@ export default function Atendimento() {
               'Momentos de transição (casamento, filhos, separação)',
             ].map((item) => (
               <div key={item} className="flex items-center gap-3 text-warm-400 font-light text-sm">
-                <div className="w-1 h-1 rounded-full bg-blush flex-shrink-0" />
+                <div className="w-1 h-1 rounded-full bg-peach-dark flex-shrink-0" />
                 {item}
               </div>
             ))}
           </div>
           <div className="order-1 md:order-2">
-            <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">02</p>
             <h2 className="font-serif font-light text-4xl text-warm mb-6">
               Atendimento de Casais
             </h2>
@@ -107,7 +113,6 @@ export default function Atendimento() {
       <section className="bg-cream-dark py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-xs tracking-widest uppercase text-warm-400 mb-3">03</p>
             <h2 className="font-serif font-light text-4xl text-warm">Modalidades</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -125,8 +130,8 @@ export default function Atendimento() {
                 text: 'Combinação de sessões presenciais e remotas, conforme a necessidade de cada pessoa.',
               },
             ].map(({ title, text }) => (
-              <div key={title} className="border border-accent/30 p-8 hover:border-accent transition-colors duration-200">
-                <div className="w-8 h-px bg-blush mb-6" />
+              <div key={title} className="border border-accent/25 p-8 hover:border-accent/60 transition-colors duration-200">
+                <div className="w-8 h-px bg-peach-dark mb-6" />
                 <h3 className="font-serif text-xl text-warm mb-3">{title}</h3>
                 <p className="text-warm-400 font-light text-sm leading-relaxed">{text}</p>
               </div>
@@ -138,10 +143,10 @@ export default function Atendimento() {
       {/* CTA */}
       <section className="bg-accent py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-serif font-light text-4xl text-cream mb-6">
+          <h2 className="font-serif font-light text-4xl text-white mb-6">
             Tem alguma dúvida?
           </h2>
-          <p className="text-cream/70 font-light leading-relaxed mb-8">
+          <p className="text-white/70 font-light leading-relaxed mb-8">
             Entre em contato pelo WhatsApp para conversarmos sobre qual
             modalidade é mais adequada para você.
           </p>
@@ -149,7 +154,7 @@ export default function Atendimento() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/40 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-accent transition-all duration-200"
+            className="inline-flex items-center gap-2 px-10 py-4 border border-white/40 text-white text-sm tracking-wide font-light hover:bg-white hover:text-accent transition-all duration-200"
           >
             Falar pelo WhatsApp
           </a>

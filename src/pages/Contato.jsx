@@ -18,18 +18,25 @@ export default function Contato() {
       <section className="bg-cream py-24 px-6 text-center">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs tracking-widest uppercase text-warm-400 mb-6">Contato</p>
-          <div className="w-16 h-px bg-accent mx-auto mb-8" />
+          <div className="flex items-center gap-4 mb-8 max-w-xs mx-auto">
+            <div className="flex-1 h-px bg-accent/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+            <div className="flex-1 h-px bg-accent/40" />
+          </div>
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Fale comigo
           </h1>
-          <div className="w-16 h-px bg-accent mx-auto mt-8" />
+          <div className="flex items-center gap-4 mt-8 max-w-xs mx-auto">
+            <div className="flex-1 h-px bg-accent/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+            <div className="flex-1 h-px bg-accent/40" />
+          </div>
         </div>
       </section>
 
       {/* Contact info */}
       <section className="bg-cream-dark py-20 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
-          {/* WhatsApp */}
           <div>
             <p className="text-xs tracking-widest uppercase text-warm-400 mb-6">Principal</p>
             <h2 className="font-serif font-light text-3xl text-warm mb-4">WhatsApp</h2>
@@ -52,7 +59,6 @@ export default function Contato() {
             </a>
           </div>
 
-          {/* Email + Location */}
           <div className="space-y-10">
             <div>
               <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Email</p>

@@ -49,7 +49,7 @@ export default function Navbar() {
               className={`text-sm tracking-wide font-light transition-colors duration-200 pb-0.5 ${
                 location.pathname === to
                   ? 'text-warm border-b border-accent'
-                  : 'text-warm hover:text-warm-400'
+                  : 'text-warm hover:text-accent'
               }`}
             >
               {label}
@@ -82,7 +82,7 @@ export default function Navbar() {
                 key={to}
                 to={to}
                 className={`text-base font-light tracking-wide transition-colors ${
-                  location.pathname === to ? 'text-accent' : 'text-warm hover:text-warm-400'
+                  location.pathname === to ? 'text-accent' : 'text-warm hover:text-accent'
                 }`}
               >
                 {label}

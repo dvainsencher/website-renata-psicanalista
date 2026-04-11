@@ -15,22 +15,30 @@ export default function Home() {
         <meta property="og:url" content="https://renatadruck.com.br/" />
       </Helmet>
 
-      {/* Hero — name as focal point */}
+      {/* Hero */}
       <section className="min-h-screen flex flex-col items-center justify-center bg-cream pt-20 px-6 text-center">
         <p className="text-xs tracking-widest uppercase text-warm-400 mb-8 font-light">
           São Paulo — SP
         </p>
-        <div className="mb-6">
-          <div className="w-16 h-px bg-accent mx-auto mb-8" />
-          <h1 className="font-serif font-light text-6xl md:text-7xl lg:text-8xl text-warm leading-none tracking-tight mb-4">
+        <div className="mb-6 w-full max-w-2xl">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="flex-1 h-px bg-accent/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+            <div className="flex-1 h-px bg-accent/40" />
+          </div>
+          <h1 className="font-serif font-light text-6xl md:text-7xl lg:text-8xl text-warm leading-none tracking-tight">
             Renata Druck
           </h1>
-          <p className="text-xs tracking-[0.4em] uppercase text-accent font-light mt-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-accent font-light mt-5">
             Psicanalista
           </p>
-          <div className="w-16 h-px bg-accent mx-auto mt-8" />
+          <div className="flex items-center gap-4 mt-8">
+            <div className="flex-1 h-px bg-accent/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+            <div className="flex-1 h-px bg-accent/40" />
+          </div>
         </div>
-        <p className="text-warm-400 font-light text-lg leading-relaxed mt-8 mb-10 max-w-md">
+        <p className="text-warm-400 font-light text-lg leading-relaxed mt-10 mb-10 max-w-md">
           Um espaço de escuta e transformação.<br />
           Atendimento individual e de casais.
         </p>
@@ -39,7 +47,7 @@ export default function Home() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3.5 bg-accent text-cream text-sm tracking-wide font-light hover:bg-accent-dark transition-colors duration-200"
+            className="inline-flex items-center justify-center px-8 py-3.5 bg-accent text-white text-sm tracking-wide font-light hover:bg-accent-dark transition-colors duration-200"
           >
             Agendar uma conversa
           </a>
@@ -90,21 +98,24 @@ export default function Home() {
               {
                 title: 'Atendimento Individual',
                 text: 'Espaço dedicado ao seu processo singular. Para quem busca autoconhecimento, bem-estar emocional e uma nova relação consigo mesmo.',
+                dot: 'bg-accent',
               },
               {
                 title: 'Atendimento de Casais',
                 text: 'Um olhar psicanalítico para a dinâmica do casal. Para quem deseja compreender os impasses relacionais e construir novos caminhos juntos.',
+                dot: 'bg-peach-dark',
               },
               {
                 title: 'Presencial, Remoto ou Híbrido',
                 text: 'Consultório próximo ao metrô Sumaré e Butantã, São Paulo. Atendimento remoto disponível para todo o Brasil.',
+                dot: 'bg-accent',
               },
-            ].map(({ title, text }) => (
+            ].map(({ title, text, dot }) => (
               <div
                 key={title}
-                className="border border-accent/30 p-8 hover:border-accent transition-colors duration-200"
+                className="border border-accent/25 p-8 hover:border-accent/60 transition-colors duration-200"
               >
-                <div className="w-6 h-px bg-blush mb-6" />
+                <div className={`w-1.5 h-1.5 rounded-full ${dot} mb-6`} />
                 <h3 className="font-serif text-xl font-normal text-warm mb-4">{title}</h3>
                 <p className="text-warm-400 font-light leading-relaxed text-sm">{text}</p>
               </div>
@@ -113,7 +124,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               to="/atendimento"
-              className="text-sm tracking-wide text-warm-400 hover:text-warm transition-colors duration-200 border-b border-warm-400/40 pb-0.5"
+              className="text-sm tracking-wide text-accent hover:text-accent-dark transition-colors duration-200 border-b border-accent/40 pb-0.5"
             >
               Ver todos os detalhes →
             </Link>
@@ -147,11 +158,11 @@ export default function Home() {
       {/* CTA */}
       <section className="bg-accent py-24 px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-xs tracking-widest uppercase text-cream/70 mb-6">Primeiro passo</p>
-          <h2 className="font-serif font-light text-4xl md:text-5xl text-cream mb-6">
+          <p className="text-xs tracking-widest uppercase text-white/60 mb-6">Primeiro passo</p>
+          <h2 className="font-serif font-light text-4xl md:text-5xl text-white mb-6">
             Pronto para começar?
           </h2>
-          <p className="text-cream/70 font-light leading-relaxed mb-10">
+          <p className="text-white/70 font-light leading-relaxed mb-10">
             O primeiro contato é o começo de tudo. Entre em contato para
             conversarmos sobre o atendimento e tirar suas dúvidas.
           </p>
@@ -159,7 +170,7 @@ export default function Home() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/40 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-accent transition-all duration-200"
+            className="inline-flex items-center gap-2 px-10 py-4 border border-white/40 text-white text-sm tracking-wide font-light hover:bg-white hover:text-accent transition-all duration-200"
           >
             Falar pelo WhatsApp
           </a>
