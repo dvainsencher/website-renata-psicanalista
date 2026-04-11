@@ -15,12 +15,14 @@ export default function Contato() {
       </Helmet>
 
       {/* Hero */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-24 px-6 text-center">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Contato</p>
+          <p className="text-xs tracking-widest uppercase text-warm-400 mb-6">Contato</p>
+          <div className="w-16 h-px bg-accent mx-auto mb-8" />
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Fale comigo
           </h1>
+          <div className="w-16 h-px bg-accent mx-auto mt-8" />
         </div>
       </section>
 

@@ -15,12 +15,14 @@ export default function Sobre() {
       </Helmet>
 
       {/* Hero */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-24 px-6 text-center">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Sobre</p>
+          <p className="text-xs tracking-widest uppercase text-warm-400 mb-6">Sobre</p>
+          <div className="w-16 h-px bg-accent mx-auto mb-8" />
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Renata Druck
           </h1>
+          <div className="w-16 h-px bg-accent mx-auto mt-8" />
         </div>
       </section>
 
@@ -46,7 +48,7 @@ export default function Sobre() {
           <div>
             <h2 className="font-serif font-light text-3xl text-warm mb-6">Formação</h2>
             <div className="space-y-6">
-              <div className="border-l-2 border-accent/40 pl-6">
+              <div className="border-l-2 border-accent/50 pl-6">
                 <p className="font-serif text-warm text-lg font-normal">
                   CEP — Centro de Estudos Psicanalíticos
                 </p>
@@ -91,12 +93,12 @@ export default function Sobre() {
       </section>
 
       {/* CTA */}
-      <section className="bg-warm py-20 px-6">
+      <section className="bg-accent py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-serif font-light text-4xl text-cream mb-6">
             Vamos conversar?
           </h2>
-          <p className="text-cream/60 font-light leading-relaxed mb-8">
+          <p className="text-cream/70 font-light leading-relaxed mb-8">
             Entre em contato pelo WhatsApp para agendar uma conversa inicial
             e saber mais sobre o atendimento.
           </p>
@@ -104,7 +106,7 @@ export default function Sobre() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/30 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-warm transition-all duration-200"
+            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/40 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-accent transition-all duration-200"
           >
             Agendar pelo WhatsApp
           </a>

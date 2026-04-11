@@ -15,12 +15,14 @@ export default function Atendimento() {
       </Helmet>
 
       {/* Hero */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-24 px-6 text-center">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">Serviços</p>
+          <p className="text-xs tracking-widest uppercase text-warm-400 mb-6">Serviços</p>
+          <div className="w-16 h-px bg-accent mx-auto mb-8" />
           <h1 className="font-serif font-light text-5xl md:text-6xl text-warm">
             Atendimento
           </h1>
+          <div className="w-16 h-px bg-accent mx-auto mt-8" />
         </div>
       </section>
 
@@ -78,7 +80,7 @@ export default function Atendimento() {
               'Momentos de transição (casamento, filhos, separação)',
             ].map((item) => (
               <div key={item} className="flex items-center gap-3 text-warm-400 font-light text-sm">
-                <div className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                <div className="w-1 h-1 rounded-full bg-blush flex-shrink-0" />
                 {item}
               </div>
             ))}
@@ -123,8 +125,8 @@ export default function Atendimento() {
                 text: 'Combinação de sessões presenciais e remotas, conforme a necessidade de cada pessoa.',
               },
             ].map(({ title, text }) => (
-              <div key={title} className="border border-accent/30 p-8">
-                <div className="w-8 h-px bg-accent mb-6" />
+              <div key={title} className="border border-accent/30 p-8 hover:border-accent transition-colors duration-200">
+                <div className="w-8 h-px bg-blush mb-6" />
                 <h3 className="font-serif text-xl text-warm mb-3">{title}</h3>
                 <p className="text-warm-400 font-light text-sm leading-relaxed">{text}</p>
               </div>
@@ -134,12 +136,12 @@ export default function Atendimento() {
       </section>
 
       {/* CTA */}
-      <section className="bg-warm py-20 px-6">
+      <section className="bg-accent py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-serif font-light text-4xl text-cream mb-6">
             Tem alguma dúvida?
           </h2>
-          <p className="text-cream/60 font-light leading-relaxed mb-8">
+          <p className="text-cream/70 font-light leading-relaxed mb-8">
             Entre em contato pelo WhatsApp para conversarmos sobre qual
             modalidade é mais adequada para você.
           </p>
@@ -147,7 +149,7 @@ export default function Atendimento() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/30 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-warm transition-all duration-200"
+            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/40 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-accent transition-all duration-200"
           >
             Falar pelo WhatsApp
           </a>

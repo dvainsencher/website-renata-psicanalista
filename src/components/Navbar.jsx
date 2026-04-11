@@ -82,7 +82,7 @@ export default function Navbar() {
                 key={to}
                 to={to}
                 className={`text-base font-light tracking-wide transition-colors ${
-                  location.pathname === to ? 'text-warm font-normal' : 'text-warm hover:text-warm-400'
+                  location.pathname === to ? 'text-accent' : 'text-warm hover:text-warm-400'
                 }`}
               >
                 {label}

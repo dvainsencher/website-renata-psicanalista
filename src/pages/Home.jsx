@@ -15,38 +15,40 @@ export default function Home() {
         <meta property="og:url" content="https://renatadruck.com.br/" />
       </Helmet>
 
-      {/* Hero */}
-      <section className="min-h-screen flex items-center bg-cream pt-20">
-        <div className="max-w-5xl mx-auto px-6 py-24 w-full">
-          <div className="max-w-2xl">
-            <p className="text-xs tracking-widest uppercase text-warm-400 mb-6 font-light">
-              Psicanalista — São Paulo
-            </p>
-            <h1 className="font-serif font-light text-5xl md:text-6xl lg:text-7xl text-warm leading-tight mb-6">
-              Um espaço de<br />
-              <em>escuta e<br />transformação</em>
-            </h1>
-            <p className="text-warm-400 font-light text-lg leading-relaxed mb-10 max-w-lg">
-              Atendimento psicanalítico individual e de casais em São Paulo.
-              Presencial, remoto e híbrido.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3.5 bg-warm text-cream text-sm tracking-wide font-light hover:bg-warm-600 transition-colors duration-200"
-              >
-                Agendar uma conversa
-              </a>
-              <Link
-                to="/sobre"
-                className="inline-flex items-center justify-center px-8 py-3.5 border border-accent text-warm text-sm tracking-wide font-light hover:bg-accent/10 transition-colors duration-200"
-              >
-                Conhecer o trabalho
-              </Link>
-            </div>
-          </div>
+      {/* Hero — name as focal point */}
+      <section className="min-h-screen flex flex-col items-center justify-center bg-cream pt-20 px-6 text-center">
+        <p className="text-xs tracking-widest uppercase text-warm-400 mb-8 font-light">
+          São Paulo — SP
+        </p>
+        <div className="mb-6">
+          <div className="w-16 h-px bg-accent mx-auto mb-8" />
+          <h1 className="font-serif font-light text-6xl md:text-7xl lg:text-8xl text-warm leading-none tracking-tight mb-4">
+            Renata Druck
+          </h1>
+          <p className="text-xs tracking-[0.4em] uppercase text-accent font-light mt-4">
+            Psicanalista
+          </p>
+          <div className="w-16 h-px bg-accent mx-auto mt-8" />
+        </div>
+        <p className="text-warm-400 font-light text-lg leading-relaxed mt-8 mb-10 max-w-md">
+          Um espaço de escuta e transformação.<br />
+          Atendimento individual e de casais.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-8 py-3.5 bg-accent text-cream text-sm tracking-wide font-light hover:bg-accent-dark transition-colors duration-200"
+          >
+            Agendar uma conversa
+          </a>
+          <Link
+            to="/sobre"
+            className="inline-flex items-center justify-center px-8 py-3.5 border border-accent text-warm text-sm tracking-wide font-light hover:bg-accent/10 transition-colors duration-200"
+          >
+            Conhecer o trabalho
+          </Link>
         </div>
       </section>
 
@@ -100,8 +102,9 @@ export default function Home() {
             ].map(({ title, text }) => (
               <div
                 key={title}
-                className="border border-accent/30 p-8 hover:border-accent/60 transition-colors duration-200"
+                className="border border-accent/30 p-8 hover:border-accent transition-colors duration-200"
               >
+                <div className="w-6 h-px bg-blush mb-6" />
                 <h3 className="font-serif text-xl font-normal text-warm mb-4">{title}</h3>
                 <p className="text-warm-400 font-light leading-relaxed text-sm">{text}</p>
               </div>
@@ -127,18 +130,9 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              {
-                place: 'Sumaré',
-                desc: 'Consultório próximo à estação Sumaré do Metrô, em São Paulo.',
-              },
-              {
-                place: 'Butantã',
-                desc: 'Consultório próximo à estação Butantã do Metrô, em São Paulo.',
-              },
-              {
-                place: 'Online',
-                desc: 'Atendimento remoto para todo o Brasil. Flexível e acessível.',
-              },
+              { place: 'Sumaré', desc: 'Consultório próximo à estação Sumaré do Metrô, em São Paulo.' },
+              { place: 'Butantã', desc: 'Consultório próximo à estação Butantã do Metrô, em São Paulo.' },
+              { place: 'Online', desc: 'Atendimento remoto para todo o Brasil. Flexível e acessível.' },
             ].map(({ place, desc }) => (
               <div key={place} className="py-8 px-6">
                 <div className="w-px h-8 bg-accent mx-auto mb-6" />
@@ -151,13 +145,13 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="bg-warm py-24 px-6">
+      <section className="bg-accent py-24 px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-xs tracking-widest uppercase text-accent mb-6">Primeiro passo</p>
+          <p className="text-xs tracking-widest uppercase text-cream/70 mb-6">Primeiro passo</p>
           <h2 className="font-serif font-light text-4xl md:text-5xl text-cream mb-6">
             Pronto para começar?
           </h2>
-          <p className="text-cream/60 font-light leading-relaxed mb-10">
+          <p className="text-cream/70 font-light leading-relaxed mb-10">
             O primeiro contato é o começo de tudo. Entre em contato para
             conversarmos sobre o atendimento e tirar suas dúvidas.
           </p>
@@ -165,7 +159,7 @@ export default function Home() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/30 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-warm transition-all duration-200"
+            className="inline-flex items-center gap-2 px-10 py-4 border border-cream/40 text-cream text-sm tracking-wide font-light hover:bg-cream hover:text-accent transition-all duration-200"
           >
             Falar pelo WhatsApp
           </a>
