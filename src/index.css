@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
   }
 
+  section[id] {
+    scroll-margin-top: 80px;
+  }
+
   body {
     background-color: #FEF8F5;
     color: #2E1F2A;

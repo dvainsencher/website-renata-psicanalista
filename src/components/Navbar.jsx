@@ -1,59 +1,38 @@
-import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 
 const navLinks = [
-  { to: '/', label: 'Início' },
-  { to: '/sobre', label: 'Sobre' },
-  { to: '/atendimento', label: 'Atendimento' },
-  { to: '/contato', label: 'Contato' },
+  { href: '#', label: 'Início' },
+  { href: '#sobre', label: 'Sobre' },
+  { href: '#atendimento', label: 'Atendimento' },
+  { href: '#contato', label: 'Contato' },
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  useEffect(() => {
-    setMenuOpen(false)
-  }, [location])
+  const handleClick = () => setMenuOpen(false)
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || menuOpen
-          ? 'bg-cream shadow-sm py-3'
-          : 'bg-transparent py-5'
-      }`}
-    >
-      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex flex-col leading-tight group">
-          <span className="font-serif text-xl font-normal tracking-wide text-warm transition-colors group-hover:text-accent">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-cream shadow-sm">
+      <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+        <a href="#inicio" onClick={handleClick} className="flex flex-col leading-none group">
+          <span className="font-serif text-4xl font-normal tracking-wider text-accent transition-colors group-hover:text-accent-dark">
             Renata Druck
           </span>
-          <span className="text-[10px] tracking-widest uppercase text-warm-400 font-light">
-            Psicanalista
+          <span className="text-[11px] tracking-[0.3em] uppercase text-warm-400 font-normal mt-1">
+            Psicanalista — São Paulo
           </span>
-        </Link>
+        </a>
 
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map(({ to, label }) => (
-            <Link
-              key={to}
-              to={to}
-              className={`text-sm tracking-wide font-light transition-colors duration-200 pb-0.5 ${
-                location.pathname === to
-                  ? 'text-warm border-b border-accent'
-                  : 'text-warm hover:text-accent'
-              }`}
+          {navLinks.map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              className="text-sm tracking-wide font-light text-warm hover:text-accent transition-colors duration-200"
             >
               {label}
-            </Link>
+            </a>
           ))}
         </nav>
 
@@ -77,16 +56,15 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-cream border-t border-accent/20 py-6 px-6">
           <nav className="flex flex-col gap-5">
-            {navLinks.map(({ to, label }) => (
-              <Link
-                key={to}
-                to={to}
-                className={`text-base font-light tracking-wide transition-colors ${
-                  location.pathname === to ? 'text-accent' : 'text-warm hover:text-accent'
-                }`}
+            {navLinks.map(({ href, label }) => (
+              <a
+                key={href}
+                href={href}
+                onClick={handleClick}
+                className="text-base font-light tracking-wide text-warm hover:text-accent transition-colors"
               >
                 {label}
-              </Link>
+              </a>
             ))}
           </nav>
         </div>

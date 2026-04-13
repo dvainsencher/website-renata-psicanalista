@@ -16,33 +16,17 @@ export default function Home() {
       </Helmet>
 
       {/* Hero */}
-      <section className="min-h-screen flex flex-col items-center justify-center bg-cream pt-20 px-6 text-center">
-        <p className="text-xs tracking-widest uppercase text-warm-400 mb-8 font-light">
-          São Paulo — SP
-        </p>
-        <div className="mb-6 w-full max-w-2xl">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex-1 h-px bg-accent/40" />
-            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-            <div className="flex-1 h-px bg-accent/40" />
-          </div>
-          <h1 className="font-serif font-light text-6xl md:text-7xl lg:text-8xl text-warm leading-none tracking-tight">
-            Renata Druck
-          </h1>
-          <p className="text-xs tracking-[0.5em] uppercase text-accent font-light mt-5">
-            Psicanalista
-          </p>
-          <div className="flex items-center gap-4 mt-8">
-            <div className="flex-1 h-px bg-accent/40" />
-            <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-            <div className="flex-1 h-px bg-accent/40" />
-          </div>
-        </div>
-        <p className="text-warm-400 font-light text-lg leading-relaxed mt-10 mb-10 max-w-md">
-          Um espaço de escuta e transformação.<br />
-          Atendimento individual e de casais.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <section className="min-h-[70vh] flex items-center bg-cream pt-16">
+        <div className="max-w-5xl mx-auto px-6 py-10 w-full">
+          <div className="max-w-2xl">
+            <h1 className="font-serif font-light text-4xl md:text-5xl lg:text-6xl text-accent italic leading-snug mb-5">
+              Um espaço de escuta e transformação.
+            </h1>
+            <p className="text-warm-400 font-light text-lg leading-relaxed mb-10">
+              Atendimento individual e de casais em São Paulo.<br />
+              Presencial, remoto e híbrido.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
           <a
             href={WHATSAPP_URL}
             target="_blank"
@@ -57,26 +41,28 @@ export default function Home() {
           >
             Conhecer o trabalho
           </Link>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Intro */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark py-14 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-xs tracking-widest uppercase text-warm-400 mb-4">A escuta psicanalítica</p>
-              <h2 className="font-serif font-light text-4xl text-warm leading-snug">
+              <h2 className="font-serif font-light text-4xl md:text-5xl text-warm leading-snug">
                 Um encontro com o que é mais singular em você
               </h2>
             </div>
             <div>
-              <p className="text-warm-400 font-light leading-relaxed mb-4">
+              <p className="text-warm-400 font-light text-lg leading-relaxed mb-4">
                 A psicanálise contemporânea oferece um espaço de escuta qualificada,
                 onde é possível explorar conflitos internos, padrões que se repetem
                 e os impasses que surgem na vida pessoal e relacional.
               </p>
-              <p className="text-warm-400 font-light leading-relaxed">
+              <p className="text-warm-400 font-light text-lg leading-relaxed">
                 Mais do que aliviar sintomas, o trabalho psicanalítico convida a uma
                 compreensão mais profunda de si mesmo — abrindo caminhos onde antes
                 havia bloqueio.
