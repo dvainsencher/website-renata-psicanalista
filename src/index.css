@@ -3,20 +3,93 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --background: 30 50% 96%;
+    --foreground: 20 10% 16%;
+
+    --card: 30 50% 96%;
+    --card-foreground: 20 10% 16%;
+
+    --popover: 30 50% 96%;
+    --popover-foreground: 20 10% 16%;
+
+    --primary: 4 40% 82%;
+    --primary-foreground: 20 10% 16%;
+
+    --secondary: 130 18% 75%;
+    --secondary-foreground: 20 10% 16%;
+
+    --muted: 30 30% 92%;
+    --muted-foreground: 20 8% 40%;
+
+    --accent: 0 26% 71%;
+    --accent-foreground: 30 50% 96%;
+
+    --heading-hero: 338 48% 55%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 20% 85%;
+    --input: 20 20% 85%;
+    --ring: 4 40% 82%;
+
+    --radius: 0.75rem;
+
+    --section-sage: 130 18% 94%;
+    --section-blush: 4 40% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    background-color: #FDFBF8;
-    color: #2C2824;
-    font-family: 'Montserrat', 'Poppins', system-ui, sans-serif;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    @apply bg-background text-foreground font-body antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Lora, Georgia, serif;
+    @apply font-heading;
+  }
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+  }
+
+  .nav-link {
+    @apply relative text-sm font-body font-medium tracking-wide text-foreground/70 transition-colors duration-300 hover:text-foreground;
+  }
+
+  .nav-link-active {
+    @apply text-foreground;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-[1.5px] w-full origin-bottom-right scale-x-0 bg-accent transition-transform duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link-active::after {
+    @apply origin-bottom-left scale-x-100;
+  }
+
+  .botanical-dot {
+    @apply h-1.5 w-1.5 rounded-full bg-accent/40;
   }
 }
