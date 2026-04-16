@@ -8,20 +8,6 @@ const services = [
   { icon: MapPin, label: "Próximos às estações Sumaré e Butantã" },
 ];
 
-const questoes = [
-  "Conflitos internos",
-  "Padrões de comportamento que se repetem",
-  "Angústias",
-  "Impasses nas relações",
-  "Autoestima",
-  "Questões identitárias",
-  "Relacionamentos conflituosos ou efêmeros",
-  "Instabilidade profissional",
-  "Fobias",
-  "Isolamento social",
-  "Transtornos de ansiedade",
-  "Compulsões",
-];
 
 const AtendimentoSection = () => (
   <section id="atendimento" className="section-padding bg-sage">
@@ -53,24 +39,6 @@ const AtendimentoSection = () => (
         ))}
       </div>
 
-      {/* Questões */}
-      <ScrollReveal delay={200}>
-        <div className="mt-16 text-center">
-          <h3 className="font-heading text-xl font-normal text-foreground md:text-2xl">
-            Questões trabalhadas
-          </h3>
-          <div className="mx-auto mt-8 flex flex-wrap justify-center gap-3">
-            {questoes.map((q) => (
-              <span
-                key={q}
-                className="rounded-full border border-accent/25 bg-background/50 px-4 py-2 font-body text-xs font-light text-foreground/75"
-              >
-                {q}
-              </span>
-            ))}
-          </div>
-        </div>
-      </ScrollReveal>
     </div>
   </section>
 );

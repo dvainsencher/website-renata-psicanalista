@@ -10,7 +10,7 @@ const HeroSection = () => (
 
     {/* ── MOBILE: full-bleed photo with gradient overlay ── */}
     <div className="relative flex min-h-screen flex-col md:hidden">
-      <div className="absolute inset-0">
+      <div className="absolute inset-x-0 bottom-0 top-20">
         <img
           src={heroMobile}
           alt=""
@@ -53,7 +53,7 @@ const HeroSection = () => (
           <img
             src={heroFallback}
             alt="Renata Druck"
-            className="absolute inset-0 h-full w-full object-cover object-top"
+            className="absolute inset-x-0 bottom-0 top-20 w-full object-cover object-top"
             loading="eager"
             fetchPriority="high"
           />
