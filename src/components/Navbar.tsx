@@ -43,22 +43,20 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-background/90 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md transition-all duration-500 ${
+        scrolled ? "shadow-sm" : ""
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-12">
         <button
           onClick={() => handleClick("#inicio")}
-          className="flex items-baseline gap-2 text-left"
+          className="flex flex-col items-start leading-tight text-left"
         >
           <span className="font-heading text-xl font-semibold tracking-wide text-heading-hero md:text-2xl">
             Renata Druck
           </span>
-          <span className="hidden font-body text-xs font-medium uppercase tracking-widest text-muted-foreground sm:inline">
-            · Psicanalista · São Paulo
+          <span className="font-body text-[10px] font-medium uppercase tracking-widest text-muted-foreground mt-0.5">
+            Psicanalista · São Paulo
           </span>
         </button>
 
