@@ -1,22 +1,5 @@
 import ScrollReveal from "./ScrollReveal";
 
-const abordagemItems = [
-  {
-    title: "Uma escuta sem julgamento",
-    description:
-      "O espaço analítico é, antes de tudo, um lugar de acolhimento. Cada pessoa traz uma história única, e meu trabalho é oferecer a escuta necessária para que essa singularidade possa emergir e ser compreendida.",
-  },
-  {
-    title: "Psicanálise contemporânea",
-    description:
-      "Minha prática é enraizada na psicanálise e enriquecida por abordagens contemporâneas, sempre em diálogo com o que emerge de cada processo. Não se trata de aplicar um método rígido, mas de construir junto um percurso que faça sentido.",
-  },
-  {
-    title: "O tempo do processo",
-    description:
-      "A análise tem seu próprio tempo. O trabalho psicanalítico respeita a profundidade e o ritmo de cada processo — porque é da profundidade que surgem as transformações mais duradouras.",
-  },
-];
 
 const QuemSouSection = () => (
   <section id="quem-sou" className="section-padding bg-background">
@@ -58,34 +41,6 @@ const QuemSouSection = () => (
         </p>
       </ScrollReveal>
 
-      {/* Abordagem section */}
-      <ScrollReveal delay={400}>
-        <div className="mt-16">
-          <h3 className="font-heading text-2xl font-normal tracking-tight text-foreground md:text-3xl">
-            Abordagem
-          </h3>
-          <div className="mx-auto mt-4 flex items-center justify-center gap-2">
-            <span className="h-px w-6 bg-accent/40" />
-            <span className="botanical-dot" />
-            <span className="h-px w-6 bg-accent/40" />
-          </div>
-        </div>
-      </ScrollReveal>
-
-      <div className="mt-12 grid gap-8 text-left md:grid-cols-3">
-        {abordagemItems.map((item, index) => (
-          <ScrollReveal key={item.title} delay={500 + index * 100}>
-            <div className="rounded-2xl border border-accent/20 bg-muted/30 p-6">
-              <h4 className="font-heading text-lg font-normal text-foreground">
-                {item.title}
-              </h4>
-              <p className="mt-3 font-body text-sm font-light leading-relaxed text-muted-foreground">
-                {item.description}
-              </p>
-            </div>
-          </ScrollReveal>
-        ))}
-      </div>
     </div>
   </section>
 );
