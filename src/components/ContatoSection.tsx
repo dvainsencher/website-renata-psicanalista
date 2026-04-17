@@ -47,7 +47,7 @@ const ContatoSection = () => (
       <ScrollReveal delay={100}>
         <p className="mt-10 text-center font-body text-sm font-light leading-relaxed text-foreground/70">
           Atendimento individual e de casais.<br />
-          Presencial em São Paulo e online.
+          Online e Presencial em São Paulo.
         </p>
       </ScrollReveal>
 

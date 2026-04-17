@@ -26,7 +26,7 @@ const HeroSection = () => (
         </h1>
         <p className="mt-6 font-body text-base font-light leading-relaxed text-foreground/80">
           Atendimento individual e de casais.<br />
-          Presencial em São Paulo e online.
+          Online e Presencial em São Paulo.
         </p>
         <div className="mt-6 flex items-center gap-2">
           <span className="botanical-dot" />
@@ -70,7 +70,7 @@ const HeroSection = () => (
           </h1>
           <p className="mt-8 font-body text-base font-light leading-relaxed text-foreground/80 lg:text-lg">
             Atendimento individual e de casais.<br />
-            Presencial em São Paulo e online.
+            Online e Presencial em São Paulo.
           </p>
           <div className="mt-8 flex items-center gap-2">
             <span className="botanical-dot" />

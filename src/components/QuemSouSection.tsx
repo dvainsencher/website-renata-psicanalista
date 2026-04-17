@@ -28,7 +28,7 @@ const QuemSouSection = () => (
 
       <ScrollReveal delay={250}>
         <p className="mt-8 font-body text-base font-light leading-[1.9] text-foreground/80 md:text-lg">
-          Atendimento para jovens, adultos e casais, de forma presencial na cidade de São Paulo e online.
+          Atendimento para jovens, adultos e casais, de forma online e presencial na cidade de São Paulo.
         </p>
       </ScrollReveal>
 
