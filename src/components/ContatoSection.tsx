@@ -44,7 +44,14 @@ const ContatoSection = () => (
         </div>
       </ScrollReveal>
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-2">
+      <ScrollReveal delay={100}>
+        <p className="mt-10 text-center font-body text-sm font-light leading-relaxed text-foreground/70">
+          Atendimento individual e de casais.<br />
+          Presencial em São Paulo e online.
+        </p>
+      </ScrollReveal>
+
+      <div className="mt-10 grid gap-6 sm:grid-cols-2">
         {items.map((item, i) => (
           <ScrollReveal key={item.label} delay={i * 100}>
             <div className="rounded-2xl bg-background/60 px-6 py-6 backdrop-blur-sm">
