@@ -39,7 +39,7 @@ const HeroSection = () => (
           rel="noopener noreferrer"
           className="mt-6 inline-block rounded-full bg-accent px-8 py-3.5 font-body text-sm font-medium tracking-wide text-accent-foreground shadow-md transition-all duration-300 hover:shadow-lg hover:brightness-105"
         >
-          Agendar uma conversa sem compromisso
+          Agendar uma conversa inicial
         </a>
       </div>
     </div>
@@ -83,7 +83,7 @@ const HeroSection = () => (
             rel="noopener noreferrer"
             className="mt-8 inline-block rounded-full bg-accent px-8 py-3.5 font-body text-sm font-medium tracking-wide text-accent-foreground shadow-md transition-all duration-300 hover:shadow-lg hover:brightness-105"
           >
-            Agendar uma conversa sem compromisso
+            Agendar uma conversa inicial
           </a>
         </div>
       </div>
