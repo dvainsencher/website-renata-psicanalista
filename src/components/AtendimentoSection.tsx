@@ -54,7 +54,7 @@ const AtendimentoSection = () => (
         {abordagemItems.map((item, i) => (
           <ScrollReveal key={item.title} delay={150 + i * 100}>
             <div className="rounded-2xl border border-accent/20 bg-background/50 p-6 backdrop-blur-sm">
-              <h4 className="font-heading text-lg font-medium italic text-heading-hero">
+              <h4 className="font-heading text-xl font-medium italic text-heading-hero">
                 {item.title}
               </h4>
               <p className="mt-3 font-body text-sm font-normal leading-relaxed text-foreground/85">
