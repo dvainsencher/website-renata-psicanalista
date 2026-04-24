@@ -54,10 +54,10 @@ const AtendimentoSection = () => (
         {abordagemItems.map((item, i) => (
           <ScrollReveal key={item.title} delay={150 + i * 100}>
             <div className="rounded-2xl border border-accent/20 bg-background/50 p-6 backdrop-blur-sm">
-              <h4 className="font-heading text-lg font-normal text-foreground">
+              <h4 className="font-heading text-lg font-medium italic text-heading-hero">
                 {item.title}
               </h4>
-              <p className="mt-3 font-body text-sm font-light leading-relaxed text-foreground/70">
+              <p className="mt-3 font-body text-sm font-normal leading-relaxed text-foreground/85">
                 {item.description}
               </p>
             </div>
@@ -76,14 +76,14 @@ const AtendimentoSection = () => (
             <span className="botanical-dot" />
             <span className="h-px w-6 bg-accent/40" />
           </div>
-          <p className="mx-auto mt-6 max-w-lg font-body text-sm font-light leading-relaxed text-foreground/70">
+          <p className="mx-auto mt-6 max-w-lg font-body text-sm font-normal leading-relaxed text-foreground/85">
             As questões iniciais são sempre singulares e devem partir dos analisandos, coloco abaixo algumas temáticas frequentes no início do trabalho analítico.
           </p>
           <ul className="mx-auto mt-8 grid max-w-xl grid-cols-1 gap-x-12 gap-y-4 text-left sm:grid-cols-2">
             {temas.map((t) => (
               <li key={t} className="flex items-start gap-3">
                 <span className="mt-[0.4rem] h-1 w-1 shrink-0 rounded-full bg-accent/60" />
-                <span className="font-body text-sm font-light leading-relaxed text-foreground/80">
+                <span className="font-body text-sm font-normal leading-relaxed text-foreground/90">
                   {t}
                 </span>
               </li>

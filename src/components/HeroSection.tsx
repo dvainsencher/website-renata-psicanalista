@@ -24,7 +24,7 @@ const HeroSection = () => (
         <h1 className="font-heading text-4xl font-light leading-tight tracking-tight text-heading-hero">
           Um espaço de escuta e transformação.
         </h1>
-        <p className="mt-6 font-body text-base font-light leading-relaxed text-foreground/80">
+        <p className="mt-6 font-body text-base font-normal leading-relaxed text-foreground/90">
           Atendimento individual e de casais.<br />
           Online e Presencial em São Paulo.
         </p>
@@ -68,7 +68,7 @@ const HeroSection = () => (
           <h1 className="font-heading text-4xl font-light leading-tight tracking-tight text-heading-hero lg:text-5xl">
             Um espaço de escuta e transformação.
           </h1>
-          <p className="mt-8 font-body text-base font-light leading-relaxed text-foreground/80 lg:text-lg">
+          <p className="mt-8 font-body text-base font-normal leading-relaxed text-foreground/90 lg:text-lg">
             Atendimento individual e de casais.<br />
             Online e Presencial em São Paulo.
           </p>

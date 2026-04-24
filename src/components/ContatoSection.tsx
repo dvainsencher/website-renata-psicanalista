@@ -45,7 +45,7 @@ const ContatoSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={100}>
-        <p className="mt-10 text-center font-body text-sm font-light leading-relaxed text-foreground/70">
+        <p className="mt-10 text-center font-body text-sm font-normal leading-relaxed text-foreground/85">
           Atendimento individual e de casais.<br />
           Online e Presencial em São Paulo.
         </p>
@@ -66,12 +66,12 @@ const ContatoSection = () => (
                   href={item.href}
                   target={item.external ? "_blank" : undefined}
                   rel={item.external ? "noopener noreferrer" : undefined}
-                  className="mt-3 block font-body text-sm font-light text-foreground/85 underline decoration-accent/30 underline-offset-4 transition-colors hover:text-foreground"
+                  className="mt-3 block font-body text-sm font-normal text-foreground/95 underline decoration-accent/30 underline-offset-4 transition-colors hover:text-foreground"
                 >
                   {item.value}
                 </a>
               ) : (
-                <p className="mt-3 font-body text-sm font-light text-foreground/85">
+                <p className="mt-3 font-body text-sm font-normal text-foreground/95">
                   {item.value}
                 </p>
               )}
