@@ -16,7 +16,7 @@ const QuemSouSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={150}>
-        <p className="mt-10 font-body text-base font-light leading-[1.9] text-foreground/80 md:text-lg">
+        <p className="mt-10 font-body text-base font-normal leading-[1.9] text-foreground/90 md:text-lg">
           Fundamentada na psicanálise e enriquecida pelo diálogo com
           abordagens contemporâneas, Renata oferece um espaço de escuta
           para elaboração de conflitos, padrões de comportamento que se repetem,
@@ -27,7 +27,7 @@ const QuemSouSection = () => (
       </ScrollReveal>
 
       <ScrollReveal delay={250}>
-        <p className="mt-8 font-body text-base font-light leading-[1.9] text-foreground/80 md:text-lg">
+        <p className="mt-8 font-body text-base font-normal leading-[1.9] text-foreground/90 md:text-lg">
           Atendimento para jovens, adultos e casais, de forma online e presencial na cidade de São Paulo.
         </p>
       </ScrollReveal>
